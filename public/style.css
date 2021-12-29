@@ -1,0 +1,11 @@
+* {
+    background-color: rgb(46, 95, 79);
+}
+
+.hello {
+    background-color: blue;
+    width: 100%
+}
+body {
+    background-color: red;
+}

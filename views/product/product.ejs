@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+</head>
+<body>
+    <% for (let item of allProducts) { %>
+        <ul>List</ul>
+        <li><a href="/product/<%=item._id%> ">Name:<%= item.name%> </a></li>
+        <li><a href="/product/<%=item._id%> ">Prices: <%= item.prices%></a></li>
+        <li><a href="/product/<%=item._id%> ">Category: <%= item.category%></a></li>
+     
+    <% } %>
+
+
+
+    <form method="POST" action="/product">
+
+        <label for="name">Name:</label>
+        <input type="text">
+        <label for="name">Price:</label>
+        <input type="number">
+        <select>
+            <option value="garlic">Garlic</option>
+            <option value="oranges">Oranges</option>
+            <option value="apples">Apples</option>
+
+        </select>
+    </form>
+ 
+</body>
+</html>
